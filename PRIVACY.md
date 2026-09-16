@@ -1,22 +1,31 @@
 # Finance Calculator — Privacy Policy
 
-**Effective date:** 16 September 2026
+**Effective date:** 17 September 2026
 
-Finance Calculator is a Reddit app that adds finance calculators to a subreddit as an interactive post. This policy explains what information the app handles. The short version: **the app does not collect, store or share your personal information.**
+Finance Calculator is a Reddit app that adds finance calculators to a subreddit as an interactive post. This policy explains what information the app handles. The short version: **the app does not collect, store or share your personal information.** Anything it remembers stays in your own browser.
 
 ## Numbers you enter
 
 Every number you type into a calculator — amounts, rates, durations, dates — is processed only in your own browser or Reddit app. These numbers are:
 
 - not sent to the app's developer or to any other server by the calculator,
-- not saved after you leave the post, and
-- not logged, measured or analysed.
+- not logged, measured or analysed, and
+- kept only in your own browser, as described below, so each calculator opens with the values you entered last.
 
 The calculators make no network requests while you use them and load no live market data.
 
-## Your display settings
+If you save a result as **scenario A** to compare it with another calculation, that scenario is kept only in memory and disappears when you close the calculator.
 
-If you change the language, currency, color palette or switch between light and dark, the app remembers that choice in your own browser's local storage, under the names `finance-calculator-language`, `finance-calculator-currency`, `finance-calculator-palette` and `finance-calculator-theme`, so the calculator opens the same way next time. It stores nothing else there. You can remove these at any time by clearing your browser's site data.
+## What is stored in your browser
+
+The app uses your own browser's local storage, which only this app can read on your device:
+
+- **Display settings:** your language, currency, color palette and light or dark choice, under `finance-calculator-language`, `finance-calculator-currency`, `finance-calculator-palette` and `finance-calculator-theme`.
+- **Your last inputs:** the values you entered in each calculator, under `finance-calculator-inputs`. **Reset** in a calculator removes that calculator's values.
+- **Recently used calculators:** the last three calculators you opened, under `finance-calculator-recent`.
+- **Opening in full screen:** when you tap a calculator in the post preview, the app briefly stores which one under `finance-calculator-open` so the full-screen view can show it. It is removed as soon as the full-screen view opens.
+
+It stores nothing else there. You can remove all of this at any time by clearing your browser's site data.
 
 The app sets no cookies of its own and uses no analytics, advertising or tracking tools.
 
