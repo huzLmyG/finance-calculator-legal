@@ -14,9 +14,9 @@ Every number you type into a calculator — amounts, rates, durations, dates —
 
 The calculators make no network requests while you use them and load no live market data.
 
-## Your language choice
+## Your language and color choices
 
-If you change the language, the app remembers that choice in your own browser's local storage, under the name `finance-calculator-language`, so the calculator opens in the same language next time. It stores nothing else there. You can remove it at any time by clearing your browser's site data.
+If you change the language or the color palette, the app remembers that choice in your own browser's local storage, under the names `finance-calculator-language` and `finance-calculator-palette`, so the calculator opens the same way next time. It stores nothing else there. You can remove these at any time by clearing your browser's site data.
 
 The app sets no cookies of its own and uses no analytics, advertising or tracking tools.
 
