@@ -36,7 +36,7 @@ The app uses your own browser's local storage, which only this app can read on y
 - **Display settings:** your language, currency, color palette and light or dark choice, under `finance-calculator-language`, `finance-calculator-currency`, `finance-calculator-palette` and `finance-calculator-theme`.
 - **Your last inputs:** the values you entered in each calculator, under `finance-calculator-inputs`. **Reset** in a calculator removes that calculator's values.
 - **Recently used calculators:** the last three calculators you opened, under `finance-calculator-recent`.
-- **Opening in full screen:** when you tap a calculator in the post preview, the app briefly stores which one under `finance-calculator-open` so the full-screen view can show it. It is removed as soon as the full-screen view opens.
+- **Opening in full screen:** when you tap a calculator (or, as a moderator, the usage stats) in the post preview, the app briefly stores which one under `finance-calculator-open` so the full-screen view can show it. It is removed as soon as the full-screen view opens.
 - **Session marker:** in your browser's session storage, `finance-calculator-language-tracked` notes that the display language and device type were already counted, so they are counted at most once per session. Your browser removes it when the session ends.
 
 It stores nothing else there. You can remove all of this at any time by clearing your browser's site data.
