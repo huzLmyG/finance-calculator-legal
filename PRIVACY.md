@@ -1,8 +1,8 @@
 # Finance Calculator — Privacy Policy
 
-**Effective date:** 22 September 2026 (applies from app version 1.1.0)
+**Effective date:** 28 September 2026 (applies from app version 1.6.0)
 
-Finance Calculator is a Reddit app that adds finance calculators to a subreddit as an interactive post. This policy explains what information the app handles. The short version: **the app does not collect, store or share your personal information.** The numbers you enter stay in your own browser. The app only keeps anonymous daily counts of how often it is used in each community, described below.
+Finance Calculator is a Reddit app that adds finance calculators to a subreddit as an interactive post. This policy explains what information the app handles. The short version: **the app does not collect, store or share your personal information.** The numbers you enter stay in your own browser. The app only keeps anonymous counts of how often it is used in each community, described below.
 
 ## Numbers you enter
 
@@ -18,16 +18,16 @@ If you save a result as **scenario A** to compare it with another calculation, t
 
 ## Anonymous usage counts
 
-To learn which calculators are useful, the app counts a few actions: opening the calculator post, opening a calculator, finishing a calculation, copying a share summary, comparing two scenarios, and the display language (once per browser session). For each action, the app sends one small request to its own server on Reddit's developer platform that contains only the name of the action and, where relevant, which calculator or which language.
+To learn which calculators are useful, the app counts a few actions: opening the calculator post, opening a calculator, finishing a calculation, copying a share summary, comparing two scenarios, a calculation that ends with an input error, and the display language and whether the device is touch-first (counted as mobile) or not (both once per browser session). For each action, the app sends one small request to its own server on Reddit's developer platform that contains only the name of the action and, where relevant, which calculator, which language or mobile/desktop.
 
-The server adds 1 to a daily total for the community where the app is installed. These totals:
+The server adds 1 to a daily total and to a running all-time total for the community where the app is installed. These totals:
 
 - contain no user IDs, usernames, post or comment content, entered numbers or results,
-- are not an event log; only the sum per day, action and calculator or language is kept,
+- are not an event log; only the sum per day (and in total) for each action and calculator, language or device type is kept,
 - are stored in the app's storage for that community on Reddit's developer platform, and
-- are deleted automatically 90 days after the day they belong to.
+- are deleted automatically 90 days after the day they belong to (daily totals), or kept for as long as the app is installed in that community (all-time totals).
 
-Moderators of that community can view the totals for the last 7 and 30 days in the moderator menu. The totals are not sent anywhere outside Reddit, and no third-party analytics service is used. If counting fails, the calculator keeps working normally.
+Moderators of that community can view the totals in the moderator menu and on a usage stats page inside the calculator post. The totals are not sent anywhere outside Reddit, and no third-party analytics service is used. If counting fails, the calculator keeps working normally.
 
 ## What is stored in your browser
 
@@ -37,7 +37,7 @@ The app uses your own browser's local storage, which only this app can read on y
 - **Your last inputs:** the values you entered in each calculator, under `finance-calculator-inputs`. **Reset** in a calculator removes that calculator's values.
 - **Recently used calculators:** the last three calculators you opened, under `finance-calculator-recent`.
 - **Opening in full screen:** when you tap a calculator in the post preview, the app briefly stores which one under `finance-calculator-open` so the full-screen view can show it. It is removed as soon as the full-screen view opens.
-- **Session marker:** in your browser's session storage, `finance-calculator-language-tracked` notes that the display language was already counted, so it is counted at most once per session. Your browser removes it when the session ends.
+- **Session marker:** in your browser's session storage, `finance-calculator-language-tracked` notes that the display language and device type were already counted, so they are counted at most once per session. Your browser removes it when the session ends.
 
 It stores nothing else there. You can remove all of this at any time by clearing your browser's site data.
 
@@ -45,13 +45,15 @@ The app sets no cookies of its own and uses no third-party analytics, advertisin
 
 ## Sharing a result
 
-**Share on Reddit** shows a text summary of your scenario. Nothing is shared unless you copy that text yourself and paste it somewhere. The app never posts, comments or sends messages on your behalf.
+**Copy for Reddit** prepares a text summary of your scenario. Nothing is shared unless you copy that text yourself and paste it somewhere. The app never posts, comments or sends messages on your behalf.
 
 ## Moderator menu
 
 When a moderator chooses **Create Finance Calculator** from the subreddit menu, the app uses information that Reddit provides for that action — the subreddit name, the moderator's user ID and username — to check that the person is a moderator of that subreddit. It then creates one calculator post. This information is used only for that check, is not stored by the app, and is not used for anything else.
 
-The same moderator check is used when a moderator opens **Finance Calculator: usage stats**. That view only reads the anonymous daily totals described above.
+When the app is installed in a community, it creates one calculator post there. It uses no personal information for that.
+
+The same moderator check is used when a moderator opens **Finance Calculator: usage stats** in the moderator menu. To decide whether to show the usage stats page inside the calculator post, the app also asks Reddit whether the person viewing the post moderates that community; Reddit answers based on the viewer's user ID. The answer is used only for that page and is not stored. Both views only read the anonymous totals described above.
 
 ## Reddit
 
