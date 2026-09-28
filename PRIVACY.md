@@ -37,6 +37,7 @@ The app uses your own browser's local storage, which only this app can read on y
 - **Your last inputs:** the values you entered in each calculator, under `finance-calculator-inputs`. **Reset** in a calculator removes that calculator's values.
 - **Recently used calculators:** the last three calculators you opened, under `finance-calculator-recent`.
 - **Opening in full screen:** when you tap a calculator (or, as a moderator, the usage stats) in the post preview, the app briefly stores which one under `finance-calculator-open` so the full-screen view can show it. It is removed as soon as the full-screen view opens.
+- **Favorite calculators on the stats page (moderators only):** the calculators a moderator marks with a star, under `finance-calculator-stats-favorites`.
 - **Session marker:** in your browser's session storage, `finance-calculator-language-tracked` notes that the display language and device type were already counted, so they are counted at most once per session. Your browser removes it when the session ends.
 
 It stores nothing else there. You can remove all of this at any time by clearing your browser's site data.
